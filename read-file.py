@@ -1,6 +1,6 @@
 import json
 
-with open('common/yob2021.txt', encoding='utf-8') as file:
+with open("common/yob2021.txt", encoding="utf-8") as file:
     lines = [line.rstrip() for line in file]
 
 names = []
