@@ -19,10 +19,11 @@ print("[Generating statistics for each result...]")
 for counter in range(1, number_of_sides + 1):
     face_occurrences.append(roll_results.count(counter))
 
-for counter in range(1, number_of_sides + 1):    
+for counter in range(1, number_of_sides + 1):
     percentual = (face_occurrences[counter - 1] / number_of_plays) * 100
     
-    print("Total plays of side {}".format(str(counter)) + 
-        ": ".format(str(face_occurrences[counter - 1])) + 
-        "{} ".format(face_occurrences[counter - 1]) +
-        "({}) ".format(str(round(percentual, 2)) + "%"))
+    print("Total plays of side {}".format(str(counter))
+        + ": ".format(str(face_occurrences[counter - 1]))
+        + "{} ".format(face_occurrences[counter - 1])
+        + "({}) ".format(str(round(percentual, 2))
+        + "%"))
