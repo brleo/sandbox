@@ -1,7 +1,7 @@
 import secrets
 
 number_of_sides = 6
-number_of_plays = 10000
+number_of_plays = 100
 
 roll_results = []
 face_occurrences = []
